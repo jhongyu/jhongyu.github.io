@@ -1074,7 +1074,7 @@ theme_config:
         # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
         # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
         # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
-        three:
+        three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
         three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
         canvas_lines:
         canvas_sphere:
