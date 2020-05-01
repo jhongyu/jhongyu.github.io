@@ -181,7 +181,7 @@ jobs:
           echo "${{ steps.deploy.outputs.notify }}"
 
 {% endcode %}
->👉注意：由于Hexo模板无法渲染Cache部分，故上面的命令缺失了Cache部分，具体可参见我的[仓库](https://github.com/jhongyu/jhongyu.github.io/blob/source/.github/workflows/develop.yml)中的文件，或查看Github的官方[actions/cache仓库](https://github.com/actions/cache)
+**PS：由于Hexo模板无法渲染Cache部分，故上面的命令缺失了Cache部分，具体可参见我的[仓库](https://github.com/jhongyu/jhongyu.github.io/blob/source/.github/workflows/develop.yml)中的文件，或查看Github的官方[actions/cache仓库](https://github.com/actions/cache)**
 5. 之后在本地写完博客推送之后Github Actions便会自动运行将生成的网站文件提交到master分支上。
 <!-- endtab -->
 {% endtabs %}
