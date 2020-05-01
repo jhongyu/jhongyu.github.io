@@ -155,24 +155,6 @@ jobs:
         with:
           node-version: '12.x'
 
-      # - name: Get yarn cache directory path
-      #   id: yarn-cache-dir-path
-      #   run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
-      # - name: Yarn cache
-      #   uses: actions/cache@v1
-      #   id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-      #   with:
-      #       path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-      #       key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      #       restore-keys: |
-      #           ${{ runner.os }}-yarn-
-
-      # - name: Install Dependencies
-      #   if: steps.cache.outputs.cache-hit != 'true'
-      #   run: npm install
-
       - name: Install dependencies & Generate static files
         run: |
           node -v
